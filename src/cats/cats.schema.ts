@@ -4,4 +4,6 @@ export const CatSchema = new mongoose.Schema({
   name: String,
   age: Number,
   breed: String,
+  price: Number,
+  description: String,
 });

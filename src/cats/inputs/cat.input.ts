@@ -8,4 +8,8 @@ export class CatInput {
   readonly age: number;
   @Field()
   readonly breed: string;
+  @Field(() => Int)
+  readonly price: number;
+  @Field()
+  readonly description: string;
 }

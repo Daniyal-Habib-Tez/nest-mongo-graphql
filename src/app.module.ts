@@ -11,7 +11,10 @@ import { CatsModule } from './cats/cats.module';
     GraphQLModule.forRoot({
       autoSchemaFile: 'schema.gql',
     }),
-    MongooseModule.forRoot('mongodb://localhost/nest'),
+    // MongooseModule.forRoot('mongodb://localhost/nest'),
+    MongooseModule.forRoot(
+      'mongodb+srv://n4beel:aQ3HZ9EzoB9HXBv3@sandbox.mwosc.mongodb.net/AIMotionDetection?retryWrites=true&w=majority',
+    ),
   ],
   controllers: [AppController],
   providers: [AppService],
